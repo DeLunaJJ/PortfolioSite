@@ -1,0 +1,340 @@
+/* Overall Stuff */
+
+#body{
+    display: block;
+    box-sizing: border-box;
+    background:url(Assets/blank-blue-953214.jpg) repeat-y, fixed, rgb(77, 85, 133);
+    background-size: 155%;
+}
+
+ul{
+    text-align: left;
+    list-style: none;
+}
+
+li{
+    float: left;
+    border: 2px;
+    border-color: white;
+    text-decoration: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(218, 150, 47);
+}
+
+.nav-link:hover{
+    text-decoration: none;
+    color: rgb(48, 120, 138);
+}
+
+.nav-link disabled:hover{
+    color: gray;
+}
+
+.clear{
+    clear: both;
+    font-size: 1%;
+}
+
+
+
+#navbar{
+    width: 1700px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    background-color: white;
+    font-size: 32px;
+}
+
+/* Jumbrotron Header */
+
+header{
+    width: 1700px;
+    padding-top: 2%;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.header-clear{
+    clear:both;
+}
+
+
+.jumbotron-jumbotron-fluid{
+    background: rgb(24, 50, 88) url("Assets/Leaf\ in\ Lake.jpg") no-repeat;
+    background-position-y: -1400px;
+    background-position-x: -600px;
+    display: block;
+    box-sizing: border-box;
+   color: white;
+   text-shadow: 25px black;
+   height: 300px;
+   width: 1700px;
+   margin-left: auto;
+   margin-right: auto;
+ 
+}
+
+#title{
+    width: 400px;
+    height: 300px;
+    background-color: rgba(177, 177, 177, 0.678);
+}
+
+.display-4{
+    float: left;
+    position: relative;
+    text-align: left;
+    color: white;
+    text-shadow: 25px black;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0 0 5%;
+    text-shadow: 2px 1px 2px rgba(63, 63, 63, 0.774);
+}
+
+.lead{
+    float: left;
+    position: relative;
+    text-shadow: 2px 1px 1px rgb(63, 63, 63);
+    color: white;
+    text-shadow: 25px black;
+    margin: 0 0 0 3em;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0 1% 5%;
+}
+
+.buttonLinks{
+    float: left;
+    position: relative;
+    margin: 0 0 0 3em;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5% 0 1% 5%;
+}
+
+.linkedIn{
+    margin-left: 25%;
+}
+
+/* Biography Section */
+
+
+
+#bio{
+    width: 1700px;
+    height: 907px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(115, 155, 216);
+}
+
+.bioBox{
+    padding: 0% 0 0 8%;
+}
+
+.bioHeader{
+    position: absolute;
+    float: left;
+    padding: 1% 0 0 0 ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 72px; 
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bioLead{
+    position: relative;
+    top: 150px;
+    float: left;
+    width: 700px;
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bioText{
+    position: relative;
+    float: left;
+    top: 250px;
+    width: 790px;
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bioImg{
+    position:relative;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Vimeo Section */
+
+.highlightVideos{
+    width: 1700px;
+    height: 800px;
+    display: block;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    background: radial-gradient(rgb(115, 155, 216),rgb(56, 76, 105));
+    color: white;
+}
+
+.highlights{
+    font-size: 72px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2% 9% 0 9%;
+  
+    
+}
+
+.highlightText{
+    font-size: 32px;
+    padding: 0 9% 0 9%;
+    
+}
+
+.vimeo-link{
+    text-decoration: none;
+    color: rgb(255, 181, 96);
+}
+
+.vimeo-link:hover{
+    text-decoration: none;
+    color: rgb(37, 211, 255);
+}
+
+
+.block{
+    width: 750px;
+    height: 560px;
+    position: relative;
+    float: left;
+    text-align: left;
+    padding: 2% 0 0 9%;
+
+}
+
+.videoDescription{
+    font-size: 32px;
+}
+
+/*Coding Section*/
+
+#coding{
+    width: 1700px;
+    height: 907px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(115, 155, 216);
+}
+
+.codingHeader{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 72px; 
+}
+
+.codingBox{
+    padding: 2% 8% 0 8%;
+}
+
+.codingText{
+    width: 1000px;
+    font-size: 32px;
+}
+
+.line{
+    background: rgb(115, 155, 216);
+    height: 5px;
+    margin: 0 0 0 0;
+    position: relative;
+    top: 16px;
+}
+
+.codingPhotos{
+    float: left;
+    position: relative;
+    top: 15px;
+}
+
+
+/* Contact Form */
+
+
+#contact{  
+    width: 1700px;
+    padding: 3% 0 4% 0;
+    background: radial-gradient(rgb(115, 155, 216),rgb(56, 76, 105));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactBox{
+    padding: 2% 8% 0 8%;
+}
+
+.text-center-text-uppercase{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 72px;
+    color: white;
+    
+}
+
+label{
+    color: white;
+}
+
+input{
+    color:white;
+}
+
+.row{
+    padding-top: 10%;
+}
+
+
+/* Bottom BAr */
+
+#bottomBar{
+    width: 1700px;
+    height: 50px;
+    background: linear-gradient(to right, rgb(115, 155, 216),rgb(56, 76, 105));
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+ }
+
+.bottomText{
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+}
+
+#nav-Top{
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+}
+
+.nav-link-Top{
+    text-align:center;
+    list-style:none;
+}
