@@ -41,8 +41,8 @@ li{
 
 
 #navbar{
-    width: 1700px;
-    height: 50px;
+    width: 90%;
+    height: 3%;
     margin-left: auto;
     margin-right: auto;
     text-align:center;
@@ -53,7 +53,7 @@ li{
 /* Jumbrotron Header */
 
 header{
-    width: 1700px;
+    width: 90%;
     padding-top: 2%;
     background: white;
     margin-left: auto;
@@ -75,7 +75,7 @@ header{
    color: white;
    text-shadow: 25px black;
    height: 300px;
-   width: 1700px;
+   width: 100%;
    margin-left: auto;
    margin-right: auto;
  
@@ -124,7 +124,9 @@ header{
 }
 
 .linkedIn{
-    margin-left: 25%;
+    position: relative;
+    float: left;
+    margin-left: 1em;
 }
 
 /* Biography Section */
@@ -132,82 +134,110 @@ header{
 
 
 #bio{
-    width: 1700px;
-    height: 907px;
-    background-color: white;
+    width: 90%;
+    max-height: 3000px;
     margin-left: auto;
     margin-right: auto;
     color: rgb(115, 155, 216);
+    display: block;
+    box-sizing: border-box;
 }
 
 .bioBox{
-    padding: 0% 0 0 8%;
+    max-width: 100%;
+    max-height: 3000px;
+    background: white;
+    
 }
 
 .bioHeader{
     position: absolute;
-    float: left;
-    padding: 1% 0 0 0 ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 72px; 
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    float: left;
+    max-width: 100%;
+    height: auto;
+    margin-left: 1em;
+    margin-right: 0;
+
+
 }
 
 .bioLead{
     position: relative;
-    top: 150px;
     float: left;
-    width: 700px;
+    max-width: 80%;
+    height: auto;
     font-size: 32px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 2.3em;
+    margin-top: 4em;
+    margin-right: 0;
 }
 
 .bioText{
     position: relative;
     float: left;
-    top: 250px;
-    width: 790px;
+    max-width: 52%;
+    height: auto;
     font-size: 32px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 2.3em;
+    margin-top: 3em;
+    margin-right: 0;
+    
 }
 
-.bioImg{
-    position:relative;
-    float: right;
-    margin-left: auto;
-    margin-right: auto;
+.imgBox{
+    width: 750px;
+    height: 560px;
+    position: relative;
+    float: left;
+    text-align: left;
+    padding: 2% 0 0 9%;
 }
 
 
 
 /* Vimeo Section */
 
-.highlightVideos{
-    width: 1700px;
-    height: 800px;
-    display: block;
-    box-sizing: border-box;
+#highlightVideos{
+    width: 90%;
+    max-height: 2000px;
     margin-left: auto;
     margin-right: auto;
     background: radial-gradient(rgb(115, 155, 216),rgb(56, 76, 105));
     color: white;
 }
 
+
 .highlights{
-    font-size: 72px;
+    position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 2% 9% 0 9%;
+    font-size: 72px; 
+    max-width: 50%;
+    height: 150px;
+    padding-top: 50px;
+    margin-left: 1em;
+    margin-right: 0;
+    
   
     
 }
 
+.videoText{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin-top: 1em;
+}
+
 .highlightText{
+    position: absolute;
+    width: 100%;
+    height: 100px;
     font-size: 32px;
-    padding: 0 9% 0 9%;
+    margin-left: 2.3em;
+    margin-right: 0;
+    margin-top: 1em;
     
 }
 
@@ -222,24 +252,48 @@ header{
 }
 
 
+.blocks{
+    position: relative;
+    width: 100%;
+    height: 529px;
+    font-size: 32px;
+    margin: 1em 0 0 2.3em;
+    display: block;
+}
+
 .block{
-    width: 750px;
-    height: 560px;
+    position: relative;
+    width: 640px;
+    height: 529px;
+    font-size: 32px;
+    float: left;
+    margin-right: 5em; 
+
+
+}
+
+.block2{
     position: relative;
     float: left;
-    text-align: left;
-    padding: 2% 0 0 9%;
+    max-width: 37%;
+    height: auto;
+    font-size: 32px;
+    margin-left: 2.3em;
+    margin-top: 5em;
+    margin-right: 0;
 
 }
 
 .videoDescription{
     font-size: 32px;
+    max-width: 100%;
+    height: auto;
 }
 
 /*Coding Section*/
 
 #coding{
-    width: 1700px;
+    width: 90%;
     height: 907px;
     background-color: white;
     margin-left: auto;
@@ -253,7 +307,7 @@ header{
 }
 
 .codingBox{
-    padding: 2% 8% 0 8%;
+    padding: 2% 8% 0 4%;
 }
 
 .codingText{
@@ -269,18 +323,64 @@ header{
     top: 16px;
 }
 
-.codingPhotos{
+/* .codingPhotos{
     float: left;
     position: relative;
     top: 15px;
+} */
+
+.card{
+    margin-top: 2em;
+    -webkit-margin-start: 0%;
+    margin-left: 7em;
+    float: left;
+    width: 500px;
+    align-content: center;
 }
+
+.card-body{
+    position: center;
+    width: 300px;
+}
+
+.btn-code {
+    background: #ffd79c;
+    background-image: -webkit-linear-gradient(top, #ffd79c, #e6a14c);
+    background-image: -moz-linear-gradient(top, #ffd79c, #e6a14c);
+    background-image: -ms-linear-gradient(top, #ffd79c, #e6a14c);
+    background-image: -o-linear-gradient(top, #ffd79c, #e6a14c);
+    background-image: linear-gradient(to bottom, #ffd79c, #e6a14c);
+    -webkit-border-radius: 9;
+    -moz-border-radius: 9;
+    border-radius: 9px;
+    -webkit-box-shadow: 2px 2px 4px #7e87c2;
+    -moz-box-shadow: 2px 2px 4px #7e87c2;
+    box-shadow: 2px 2px 4px #7e87c2;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn-code:hover {
+    background: #fab376;
+    background-image: -webkit-linear-gradient(top, #fab376, #ff8c00);
+    background-image: -moz-linear-gradient(top, #fab376, #ff8c00);
+    background-image: -ms-linear-gradient(top, #fab376, #ff8c00);
+    background-image: -o-linear-gradient(top, #fab376, #ff8c00);
+    background-image: linear-gradient(to bottom, #fab376, #ff8c00);
+    text-decoration: none;
+    color: white;
+  }
+
 
 
 /* Contact Form */
 
 
 #contact{  
-    width: 1700px;
+    width: 90%;
     padding: 3% 0 4% 0;
     background: radial-gradient(rgb(115, 155, 216),rgb(56, 76, 105));
     margin-left: auto;
@@ -314,7 +414,7 @@ input{
 /* Bottom BAr */
 
 #bottomBar{
-    width: 1700px;
+    width: 90%;
     height: 50px;
     background: linear-gradient(to right, rgb(115, 155, 216),rgb(56, 76, 105));
     margin-left: auto;
