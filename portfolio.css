@@ -116,7 +116,7 @@ header{
 .buttonLinks{
     float: left;
     position: relative;
-    margin: 0 0 0 3em;
+    margin: 0 0 0 15px;
     width: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -181,9 +181,12 @@ header{
     height: auto;
     margin-left: 1em;
     margin-right: 0;
+<<<<<<< HEAD
     padding-top: 50px;
     background: white;
 
+=======
+>>>>>>> dd960b613c0551930eca5d0452d6b4fe56351f7b
 }
 
 .bioLead{
