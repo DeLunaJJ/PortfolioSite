@@ -141,58 +141,71 @@ header{
     color: rgb(115, 155, 216);
     display: block;
     box-sizing: border-box;
+    background: white;
 }
 
 .bioBox{
-    max-width: 100%;
-    max-height: 3000px;
+    float:left;
+    max-width: 48%;
+    max-height: 1500px;
     background: white;
+    margin-right: 1em;
     
 }
 
+.bioSection:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .bioBox {
+        width: 100%;
+        font-size: 32px;
+    }
+}
+
+.bioImg{
+    background: url(Assets/1st_headshot.png);
+    float: left;
+    width: 50%;
+    background: white;
+}
+
 .bioHeader{
-    position: absolute;
+    position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 72px; 
-    float: left;
     max-width: 100%;
     height: auto;
     margin-left: 1em;
     margin-right: 0;
-
+    padding-top: 50px;
+    background: white;
 
 }
 
 .bioLead{
     position: relative;
-    float: left;
     max-width: 80%;
     height: auto;
     font-size: 32px;
     margin-left: 2.3em;
-    margin-top: 4em;
+    margin-top: 2.5sem;
     margin-right: 0;
+    background: white;
 }
 
 .bioText{
     position: relative;
-    float: left;
-    max-width: 52%;
-    height: auto;
+    max-width: 100%;
+    max-height: 700px;
     font-size: 32px;
     margin-left: 2.3em;
     margin-top: 3em;
     margin-right: 0;
-    
-}
-
-.imgBox{
-    width: 750px;
-    height: 560px;
-    position: relative;
-    float: left;
-    text-align: left;
-    padding: 2% 0 0 9%;
+    background: white;   
 }
 
 
@@ -237,7 +250,6 @@ header{
     font-size: 32px;
     margin-left: 2.3em;
     margin-right: 0;
-    margin-top: 1em;
     
 }
 
@@ -252,27 +264,26 @@ header{
 }
 
 
-.blocks{
-    position: relative;
-    width: 100%;
-    height: 529px;
-    font-size: 32px;
-    margin: 1em 0 0 2.3em;
-    display: block;
-}
-
 .block{
-    position: relative;
-    width: 640px;
-    height: 529px;
-    font-size: 32px;
     float: left;
-    margin-right: 5em; 
-
-
+    max-width: 60%;
+    margin-left: 3.8em;
+    margin-bottom: 3em;
 }
 
-.block2{
+.blocks:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .block {
+        width: 100%;
+    }
+}
+
+/* .block2{
     position: relative;
     float: left;
     max-width: 37%;
@@ -282,7 +293,7 @@ header{
     margin-top: 5em;
     margin-right: 0;
 
-}
+} */
 
 .videoDescription{
     font-size: 32px;
@@ -294,7 +305,7 @@ header{
 
 #coding{
     width: 90%;
-    height: 907px;
+    max-height: 1500px;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
@@ -311,7 +322,7 @@ header{
 }
 
 .codingText{
-    width: 1000px;
+    max-width: 95%;
     font-size: 32px;
 }
 
@@ -329,13 +340,25 @@ header{
     top: 15px;
 } */
 
+
 .card{
-    margin-top: 2em;
-    -webkit-margin-start: 0%;
-    margin-left: 7em;
-    float: left;
-    width: 500px;
-    align-content: center;
+    float:left;
+    max-width: 33.33%;
+    max-height: 1500px;
+    background: white;
+    margin: 3em 3.3em 3em 4em;
+}
+
+.rowCard:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
 }
 
 .card-body{
