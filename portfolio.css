@@ -1,5 +1,15 @@
 /* Overall Stuff */
 
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
 #body{
     display: block;
     box-sizing: border-box;
@@ -10,18 +20,32 @@
 ul{
     text-align: left;
     list-style: none;
+    padding: none;
+    max-width: 350px;
 }
 
 li{
     float: left;
-    border: 2px;
-    border-color: white;
-    text-decoration: none;
+    display: block;
+    box-sizing: block;
+}
+
+/* NAVBAR */
+
+.nav.justify-content-center{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
 }
 
 .nav-link{
     text-decoration: none;
     color: rgb(218, 150, 47);
+    text-align:center;
+}
+
+.nav-item{
+    text-align:center;
 }
 
 .nav-link:hover{
@@ -53,6 +77,8 @@ li{
 /* Jumbrotron Header */
 
 header{
+    min-height: 300px;
+    max-height: 900px;
     width: 90%;
     padding-top: 2%;
     background: white;
@@ -67,14 +93,13 @@ header{
 
 
 .jumbotron-jumbotron-fluid{
-    background: rgb(24, 50, 88) url("Assets/Leaf\ in\ Lake.jpg") no-repeat;
-    background-position-y: -1400px;
+    background: rgb(24, 50, 88) url("Assets/Leaf\ in\ Lake.jpg") no-repeat center;
+    background-position-y: -1400px; 
     background-position-x: -600px;
-    display: block;
-    box-sizing: border-box;
    color: white;
    text-shadow: 25px black;
-   height: 300px;
+   min-height: 300px;
+   max-height: 600px;
    width: 100%;
    margin-left: auto;
    margin-right: auto;
@@ -82,51 +107,83 @@ header{
 }
 
 #title{
-    width: 400px;
-    height: 300px;
+    min-width: 253px;
+    max-width: 400px;
+    min-height: 300px;
+    max-height: 900px;
     background-color: rgba(177, 177, 177, 0.678);
 }
 
+
 .display-4{
-    float: left;
     position: relative;
     text-align: left;
     color: white;
     text-shadow: 25px black;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 0 0 5%;
+    max-width: 400px;
+    max-height: 600px;
+    margin-left: .3em;
     text-shadow: 2px 1px 2px rgba(63, 63, 63, 0.774);
 }
 
 .lead{
-    float: left;
     position: relative;
     text-shadow: 2px 1px 1px rgb(63, 63, 63);
     color: white;
     text-shadow: 25px black;
     margin: 0 0 0 3em;
-    width: 400px;
-    margin-left: auto;
+    max-width: 400px;
+    max-height: 600px;
+    margin-left: 1em;
     margin-right: auto;
-    padding: 0 0 1% 5%;
 }
 
 .buttonLinks{
-    float: left;
     position: relative;
-    margin: 0 0 0 15px;
-    width: 400px;
-    margin-left: auto;
+    max-width: 350px;
+    margin-left: .2em;
     margin-right: auto;
-    padding: 5% 0 1% 5%;
+    right: 40px;
+    padding: none;
+    min-height: 100px;
+    max-height: 600px;
+    margin-bottom: 0;
+    margin-top: 1em;
 }
 
 .linkedIn{
     position: relative;
-    float: left;
     margin-left: 1em;
+
+}
+
+@media screen and (max-width: 810px) {
+    #title{
+        max-width: 100%;
+        min-height: 300px;
+        max-height: 900px;
+        background-color: rgba(177, 177, 177, 0.678);
+    }
+
+    .display-4{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lead{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .buttonLinks{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        left: 1px;
+        width: 300px;
+    }
 }
 
 /* Biography Section */
@@ -146,10 +203,12 @@ header{
 
 .bioBox{
     float:left;
-    max-width: 48%;
-    max-height: 1500px;
+    min-width: 250px;
+    max-width: 1000px;
+    max-height: 3000px;
     background: white;
-    margin-right: 1em;
+    margin-right: 2.3em;
+    font-size: 32px;
     
 }
 
@@ -159,42 +218,24 @@ header{
     clear: both;
 }
 
-@media screen and (max-width: 600px) {
-    .bioBox {
-        width: 100%;
-        font-size: 32px;
-    }
-}
-
-.bioImg{
-    background: url(Assets/1st_headshot.png);
-    float: left;
-    width: 50%;
-    background: white;
-}
-
 .bioHeader{
     position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 72px; 
     max-width: 100%;
     height: auto;
-    margin-left: 1em;
+    margin-left: .5em;
     margin-right: 0;
-<<<<<<< HEAD
     padding-top: 50px;
     background: white;
 
-=======
->>>>>>> dd960b613c0551930eca5d0452d6b4fe56351f7b
 }
 
 .bioLead{
     position: relative;
     max-width: 80%;
     height: auto;
-    font-size: 32px;
-    margin-left: 2.3em;
+    margin-left: 1.3em;
     margin-top: 2.5sem;
     margin-right: 0;
     background: white;
@@ -202,16 +243,39 @@ header{
 
 .bioText{
     position: relative;
-    max-width: 100%;
+    max-width: 80%;
     max-height: 700px;
-    font-size: 32px;
-    margin-left: 2.3em;
+    margin-left: 1.3em;
     margin-top: 3em;
     margin-right: 0;
     background: white;   
 }
 
+.bioImg{
+    max-width: 550px;
+}
 
+@media screen and (max-width: 810px) {
+    .bioBox {
+        width: 100%;
+        font-size: 20px;
+        text-align: justify;
+        padding: 1em 1em 0 2em;
+        
+    }
+
+    .bioHeader{
+        font-size: 50px;
+        text-align: center;
+        margin: 0 0 50px 0;
+    
+    }
+
+    .bioImg{
+        min-width: 100px;
+        max-width: 453px;
+    }
+}
 
 /* Vimeo Section */
 
@@ -229,14 +293,19 @@ header{
     position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 72px; 
-    max-width: 50%;
-    height: 150px;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 300px;
     padding-top: 50px;
     margin-left: 1em;
     margin-right: 0;
     
   
     
+}
+
+.videoSize{
+    width: 100%;
 }
 
 .videoText{
@@ -280,12 +349,10 @@ header{
     clear: both;
 }
 
-@media screen and (max-width: 600px) {
-    .block {
-        width: 100%;
-    }
+iframe{
+    width: 640px;
+    height: 360px;
 }
-
 /* .block2{
     position: relative;
     float: left;
@@ -304,11 +371,62 @@ header{
     height: auto;
 }
 
+@media screen and (max-width: 810px) {
+
+    .highlights{
+        text-align: center;
+        font-size: 50px;
+        margin: 0;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .videoDescription{
+        font-size: 16px;
+        text-align: center;
+        margin: 0;
+
+    }
+
+    .blocks{
+        width: 450px;
+        margin: 0 auto 0 auto;
+        align-items: center;
+        align-content: center;
+        box-align: center;
+    }
+
+    .block {
+        float: left;
+        max-width: 810px;
+        margin: 0 auto 60px auto;
+
+    }
+
+    iframe{
+        position: relative;
+       max-width: 400px;
+       margin: 0 1em 0 1em;
+       
+    }
+
+    .highlightText{
+        font-size: 32px;
+        text-align: center;
+        min-width: 300px;
+        max-width: 810px;
+        margin: 0 0 0 0;
+    }
+}
+
 /*Coding Section*/
 
 #coding{
     width: 90%;
-    max-height: 1500px;
+    max-height: 2000px;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
@@ -337,15 +455,9 @@ header{
     top: 16px;
 }
 
-/* .codingPhotos{
+.card{
     float: left;
     position: relative;
-    top: 15px;
-} */
-
-
-.card{
-    float:left;
     max-width: 33.33%;
     max-height: 1500px;
     background: white;
@@ -356,12 +468,6 @@ header{
     content: "";
     display: table;
     clear: both;
-}
-
-@media screen and (max-width: 600px) {
-    .card {
-        width: 100%;
-    }
 }
 
 .card-body{
@@ -401,7 +507,31 @@ header{
   }
 
 
+  @media screen and (max-width: 810px) {
 
+    .codingHeader{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .codingText{
+        font-size: 20px;
+        text-align: justify;
+        padding: 1em 1em 0 2em;
+    }
+
+    .card {
+        float: left;
+        position: relative;
+        min-width: 100px;
+        max-width: 280px;
+        margin: 3em 0 1em 0;
+    }
+
+    .btn-code{
+        font-size: 15px;
+    }
+  }
 /* Contact Form */
 
 
